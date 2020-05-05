@@ -1,0 +1,22 @@
+The "cifunk" function will calculate a plot a confidence interval function for any association.
+
+Simply run the R script, then in the R console type 
+
+> cifunk(
+
+and enter the following quantities:
+rrpoint,lcl95,ucl95,minhyp,maxhyp,plotpoints
+
+rrpoint:	the estimated relative risk from the study
+lcl95:		the lower 95% confidence limit
+ucl95:		the upper 95% confidence limit
+minhyp:		the minimum hypothesized relative risk (should be less than rrpoint)
+maxhyp:		the maximum hypothesized relative risk (should be larger than rrpoint)
+plotpoints:	how many points should be plotted between minhyp and maxhyp
+
+Close parentheses and hit enter...
+Hypothesized RRs and p-values will print in the console window.
+The plot will show the p-value function, a grey vertical null reference line,
+and a light blue horizontal reference line for p=0.05.
+
+Send me an e-mail to suggest new features: 02tahern@med.uvm.edu
