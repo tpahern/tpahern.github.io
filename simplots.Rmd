@@ -1,0 +1,75 @@
+---
+title: "NDMD simulation: impact of stochastic differentiality"
+author: ""
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "/Users/02tahern/OneDrive - UVM Larner College of Medicine/projects/ndmd-sim/results/analysis/output/deltascat")
+```
+
+```{r eval=FALSE, include=FALSE, results='asis'}
+files <- list.files(pattern="*.png", full.names=TRUE)
+for (f in files) {
+  cat(paste0("![image_label](", f, ")\n"))
+  }
+```
+
+## Exposure prevalence = 0.1 | Risk in unexposed = 0.01
+
+### True RR = 1
+
+![](./deltascat_prev0.1_ip0.01_rr1.png)
+
+### True RR = 1.5
+![](./deltascat_prev0.1_ip0.01_rr1.5.png)
+
+### True RR = 2
+![](./deltascat_prev0.1_ip0.01_rr2.png)
+
+### True RR = 5
+![](./deltascat_prev0.1_ip0.01_rr5.png)
+
+## Exposure prevalence = 0.1 | Risk in unexposed = 0.10
+
+### True RR = 1
+![](./deltascat_prev0.1_ip0.1_rr1.png)
+
+### True RR = 1.5
+![](./deltascat_prev0.1_ip0.1_rr1.5.png)
+
+### True RR = 2
+![](./deltascat_prev0.1_ip0.1_rr2.png)
+
+### True RR = 5
+![](./deltascat_prev0.1_ip0.1_rr5.png)
+
+## Exposure prevalence = 0.5 | Risk in unexposed = 0.01
+
+### True RR = 1
+![](./deltascat_prev0.5_ip0.01_rr1.png)
+
+### True RR = 1.5
+![](./deltascat_prev0.5_ip0.01_rr1.5.png)
+
+### True RR = 2
+![](./deltascat_prev0.5_ip0.01_rr2.png)
+
+### True RR = 5
+![](./deltascat_prev0.5_ip0.01_rr5.png)
+
+## Exposure prevalence = 0.5 | Risk in unexposed = 0.10
+
+### True RR = 1
+![](./deltascat_prev0.5_ip0.1_rr1.png)
+
+### True RR = 1.5
+![](./deltascat_prev0.5_ip0.1_rr1.5.png)
+
+### True RR = 2
+![](./deltascat_prev0.5_ip0.1_rr2.png)
+
+### True RR = 5
+![](./deltascat_prev0.5_ip0.1_rr5.png)
